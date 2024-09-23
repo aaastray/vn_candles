@@ -1,0 +1,46 @@
+.proditem {
+    display: flex;
+    flex-direction: column;
+    font-family: Cardo;
+    color: black;
+    gap: 0.25rem;
+    text-align: center;
+    justify-content: space-between;
+
+    &__title {
+        font-size: 1.25rem;
+    }
+
+    &__price {
+        font-size: 1rem;
+    }
+}
+
+.btn {
+    background: rgba(217, 217, 217, 0.3);
+    padding: 5px 15px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .proditem {
+        gap: 0.5rem;
+        &__title {
+            font-size: 1rem;
+        }
+        &__price {
+            font-size: 0.75rem;
+        }
+    }
+
+    .btn {
+        padding: 5px 15px;
+        font-size: 0.75rem;
+    }
+}

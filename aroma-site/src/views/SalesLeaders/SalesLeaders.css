@@ -1,0 +1,29 @@
+.sales_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-family: Cardo;
+    color: black;
+    font-size: 1.875rem;
+}
+
+.sales_items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+    .header {
+        font-size: 1.5rem;
+    }
+
+    .sales_items {
+        gap: 1rem;
+    }
+}

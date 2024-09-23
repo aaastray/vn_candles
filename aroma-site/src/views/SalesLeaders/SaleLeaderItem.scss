@@ -1,0 +1,38 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    font-family: Cardo;
+    color: black;
+    width: 100%;
+    gap: .5rem;
+    justify-content: space-between;
+    text-align: center;
+
+    &__title {
+        opacity: 80%;
+        font-size: 1.25rem
+    }
+
+    &__description {
+        opacity: 50%;
+        font-size: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px) {
+    .item {
+        gap: .25rem;
+    
+        &__title {
+            font-size: 1rem
+        }
+    
+        &__description {
+            font-size: .75rem;
+            width: 90%;
+        }
+    }
+}

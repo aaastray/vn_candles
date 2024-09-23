@@ -1,0 +1,48 @@
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    gap: 1rem;
+
+    &__link {
+        font-size: small;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.3);
+        transition: color 0.25s ease-in-out;
+    }
+
+    &__link:hover {
+        color: black;
+    }
+}
+
+.copyright {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: Cardo;
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    .foot {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+
+        &__link {
+            text-align: center;
+        }
+    }
+
+    .copyright {
+        font-size: .75rem;
+    }
+}
